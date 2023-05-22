@@ -8,5 +8,5 @@ def newMaven()
 }
 def newDeploy(jobname,ipadress,context)
 {
-  sh 'scp /var/lib/jenkins/workspace/${"jobname"}/webapp/target/webapp.jar ubuntu@${"ipadress"}:/var/lib/tomcat9/webapps/${"context"}.war'
+  sh 'scp /var/lib/jenkins/workspace/${"jobname"}/webapp/target/webapp.war ubuntu@${"ipadress"}:/var/lib/tomcat9/webapps/${"context"}.war'
 }
